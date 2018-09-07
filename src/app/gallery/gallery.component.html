@@ -1,0 +1,15 @@
+<p></p>
+<div class="container">
+  <div class="card card">
+    <div class="card-header">Gallery Component</div>
+    <div class="card-body">
+      <form #f="ngForm" (ngSubmit)="onSearch(f.value)">
+        <div class="form-group">
+          <label>Mots clé:</label>
+          <input class="form-control-sm" type="text" name="motCle" ngModel required>
+          <button type="submit" class="btn btn-primary m-md-1">Chercher</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
